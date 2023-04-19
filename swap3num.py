@@ -7,7 +7,26 @@ if a > b and a > c:
         a = c
         c = temp
     else:
-        temp = 
+        temp = a
+        a = b
+        b = c
+        c = temp
+
+elif b > c and b > a:
+    if c > a:
+        temp = b
+        b = c
+        c = temp
+    else:
+        temp = b
+        b = a
         a = c
         c = temp
+
+else:
+    if a > b:
+        temp = b
+        b = a
+        a = temp
+    
 print(a, b, c)
